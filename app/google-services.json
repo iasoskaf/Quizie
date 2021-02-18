@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "447378079733",
+    "project_id": "quizie-cbdb5",
+    "storage_bucket": "quizie-cbdb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447378079733:android:7ddae1b45b6bf186516abc",
+        "android_client_info": {
+          "package_name": "com.example.quizie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447378079733-8gsn47b9hnp7mfmrnqfotqmn4i1uu68d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkOxB5sda0UPi2O7VCfgddZuquP4lmNpI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "447378079733-8gsn47b9hnp7mfmrnqfotqmn4i1uu68d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

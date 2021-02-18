@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quizie">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quizie">
+        <activity android:name=".Ending_Screen"></activity>
+        <activity android:name=".WorkIt_Knowledge_Q7" />
+        <activity android:name=".WorkIt_Knowledge_Q6" />
+        <activity android:name=".WorkIt_Knowledge_Q5" />
+        <activity android:name=".WorkIt_Knowledge_Q4" />
+        <activity android:name=".WorkIt_Knowledge_Q3" />
+        <activity android:name=".WorkIt_Knowledge_Q2" />
+        <activity android:name=".WorkIt_Knowledge_Q1" />
+        <activity android:name=".MoviesActivity" />
+        <activity android:name=".Work_It_Quiz" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

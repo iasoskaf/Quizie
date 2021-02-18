@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoviesActivity"
+    android:background="#BE988F">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/category_comedies_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Comedies"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollview_1"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_comedies_txt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/movie1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/movie1" />
+
+                    <ImageButton
+                        android:id="@+id/movie2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie1"
+                        app:layout_constraintTop_toTopOf="@id/movie1"
+                        app:srcCompat="@drawable/movie2" />
+
+                    <ImageButton
+                        android:id="@+id/movie3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie2"
+                        app:layout_constraintTop_toTopOf="@id/movie2"
+                        app:srcCompat="@drawable/movie3" />
+
+                    <ImageButton
+                        android:id="@+id/movie4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie3"
+                        app:layout_constraintTop_toTopOf="@id/movie3"
+                        app:srcCompat="@drawable/movie4" />
+
+                    <ImageButton
+                        android:id="@+id/movie5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie4"
+                        app:layout_constraintTop_toTopOf="@id/movie4"
+                        app:srcCompat="@drawable/movie5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/category_drama_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Drama"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/category_comedies_txt"
+                app:layout_constraintTop_toBottomOf="@id/scrollview_1" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollview_2"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_drama_txt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/movie6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/movie6"
+                        tools:layout_editor_absoluteX="168dp" />
+
+                    <ImageButton
+                        android:id="@+id/movie7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie6"
+                        app:layout_constraintTop_toTopOf="@id/movie6"
+                        app:srcCompat="@drawable/movie7" />
+
+                    <ImageButton
+                        android:id="@+id/movie8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie7"
+                        app:layout_constraintTop_toTopOf="@id/movie7"
+                        app:srcCompat="@drawable/movie8" />
+
+                    <ImageButton
+                        android:id="@+id/movie9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie8"
+                        app:layout_constraintTop_toTopOf="@id/movie8"
+                        app:srcCompat="@drawable/movie9" />
+                    <ImageButton
+                        android:id="@+id/movie10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie9"
+                        app:layout_constraintTop_toTopOf="@id/movie9"
+                        app:srcCompat="@drawable/movie10" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/category_horror_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Horror"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/category_drama_txt"
+                app:layout_constraintTop_toBottomOf="@id/scrollview_2" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollview_3"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_horror_txt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/movie11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/movie11"
+                        tools:layout_editor_absoluteX="168dp" />
+
+                    <ImageButton
+                        android:id="@+id/movie12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie11"
+                        app:layout_constraintTop_toTopOf="@id/movie11"
+                        app:srcCompat="@drawable/movie12" />
+
+                    <ImageButton
+                        android:id="@+id/movie13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie12"
+                        app:layout_constraintTop_toTopOf="@id/movie12"
+                        app:srcCompat="@drawable/movie13" />
+
+                    <ImageButton
+                        android:id="@+id/movie14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie13"
+                        app:layout_constraintTop_toTopOf="@id/movie13"
+                        app:srcCompat="@drawable/movie14" />
+                    <ImageButton
+                        android:id="@+id/movie15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie14"
+                        app:layout_constraintTop_toTopOf="@id/movie14"
+                        app:srcCompat="@drawable/movie15" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/category_mystery_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Mystery"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/category_horror_txt"
+                app:layout_constraintTop_toBottomOf="@id/scrollview_3" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollview_4"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_mystery_txt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/movie16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/movie16"
+                        tools:layout_editor_absoluteX="168dp" />
+
+                    <ImageButton
+                        android:id="@+id/movie17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie16"
+                        app:layout_constraintTop_toTopOf="@id/movie16"
+                        app:srcCompat="@drawable/movie17" />
+
+                    <ImageButton
+                        android:id="@+id/movie18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie17"
+                        app:layout_constraintTop_toTopOf="@id/movie17"
+                        app:srcCompat="@drawable/movie18" />
+
+                    <ImageButton
+                        android:id="@+id/movie19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie18"
+                        app:layout_constraintTop_toTopOf="@id/movie18"
+                        app:srcCompat="@drawable/movie19" />
+                    <ImageButton
+                        android:id="@+id/movie20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie19"
+                        app:layout_constraintTop_toTopOf="@id/movie19"
+                        app:srcCompat="@drawable/movie20" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/category_scifi_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Sci-Fi"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/category_mystery_txt"
+                app:layout_constraintTop_toBottomOf="@id/scrollview_4" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollview_5"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_scifi_txt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/movie21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/movie21"
+                        tools:layout_editor_absoluteX="168dp" />
+
+                    <ImageButton
+                        android:id="@+id/movie22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie21"
+                        app:layout_constraintTop_toTopOf="@id/movie21"
+                        app:srcCompat="@drawable/movie22" />
+
+                    <ImageButton
+                        android:id="@+id/movie23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie22"
+                        app:layout_constraintTop_toTopOf="@id/movie22"
+                        app:srcCompat="@drawable/movie23" />
+
+                    <ImageButton
+                        android:id="@+id/movie24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie23"
+                        app:layout_constraintTop_toTopOf="@id/movie23"
+                        app:srcCompat="@drawable/movie24" />
+                    <ImageButton
+                        android:id="@+id/movie25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie24"
+                        app:layout_constraintTop_toTopOf="@id/movie24"
+                        app:srcCompat="@drawable/movie25" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/category_anime_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Anime"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/category_scifi_txt"
+                app:layout_constraintTop_toBottomOf="@id/scrollview_5" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollview_6"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/category_anime_txt">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/movie26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/movie26"
+                        tools:layout_editor_absoluteX="168dp" />
+
+                    <ImageButton
+                        android:id="@+id/movie27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie26"
+                        app:layout_constraintTop_toTopOf="@id/movie26"
+                        app:srcCompat="@drawable/movie27" />
+
+                    <ImageButton
+                        android:id="@+id/movie28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie27"
+                        app:layout_constraintTop_toTopOf="@id/movie27"
+                        app:srcCompat="@drawable/movie28" />
+
+                    <ImageButton
+                        android:id="@+id/movie29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie28"
+                        app:layout_constraintTop_toTopOf="@id/movie28"
+                        app:srcCompat="@drawable/movie29" />
+                    <ImageButton
+                        android:id="@+id/movie30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintStart_toEndOf="@id/movie29"
+                        app:layout_constraintTop_toTopOf="@id/movie29"
+                        app:srcCompat="@drawable/movie30" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

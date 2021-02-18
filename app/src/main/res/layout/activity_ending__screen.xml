@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ending_Screen"
+    android:background="#BE988F">
+    <TextView
+        android:id="@+id/quiz_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Congratulations!"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_text"
+        tools:layout_editor_absoluteX="211dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_just_finished_the_knowledge_quiz_for_work_it"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingLeft="25sp"
+            />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your total Mistakes were: "
+            android:textSize="29sp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingTop="50sp"
+
+
+
+            />
+
+        <TextView
+            android:id="@+id/mistakes_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="#FF0000"
+            android:textSize="150sp"
+            android:paddingBottom="50sp"
+
+            />
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_width="300sp"
+            android:layout_height="match_parent"
+            android:text="Great"
+            android:background="@drawable/rounded_corners"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

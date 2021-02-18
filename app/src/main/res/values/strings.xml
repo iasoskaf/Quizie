@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quizie</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="pick_a_quiz">Pick a Quiz</string>
+    <string name="create_your_own">Create Your Own</string>
+    <string name="khiyla_aynne">Khiyla Aynne</string>
+    <string name="sabrina_carpenter">Sabrina Carpenter</string>
+    <string name="marica_kyials">Marica Kyials</string>
+    <string name="you_just_finished_the_knowledge_quiz_for_work_it">You just finished the Knowledge Quiz for Work It!</string>
+</resources>
