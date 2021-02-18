@@ -33,6 +33,6 @@ public class Ending_Screen extends AppCompatActivity {
     public void openActivity_Movies(){
         Intent intent= new Intent(this, MoviesActivity.class);
         startActivity(intent);
-
+        //NAI GEIA SAS SOUVLATZIDIKO
     }
 }
