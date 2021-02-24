@@ -1,6 +1,7 @@
 package com.example.quizie;
 
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
@@ -10,6 +11,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Build;
@@ -28,10 +30,26 @@ public class Ending_Screen extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-       //creating chanel
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+
+            }
+
+        });
+        builder.setMessage(R.string.dialog)
+                .setTitle(R.string.dialog_title);
+
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+        //creating chanel
         NotificationChannel channel = new NotificationChannel("Notification", "Notification",NotificationManager.IMPORTANCE_HIGH);
         NotificationManager manager = getSystemService(NotificationManager.class);
         manager.createNotificationChannel(channel);
+
 
         //String final_mistakes = Integer.toString(intValue);
         //mistakes_result = findViewById(R.id.mistakes_result);

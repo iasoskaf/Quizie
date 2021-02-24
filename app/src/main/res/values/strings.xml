@@ -15,4 +15,7 @@
     <string name="sabrina_carpenter">Sabrina Carpenter</string>
     <string name="marica_kyials">Marica Kyials</string>
     <string name="you_just_finished_the_knowledge_quiz_for_work_it">You just finished the Knowledge Quiz for Work It!</string>
+    <string name="dialog">Achievement Unlocked! \nYou finished your first Quiz</string>
+    <string name="dialog_title">Congratulations!!</string>
+    <string name="ok">Great</string>
 </resources>

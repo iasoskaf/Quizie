@@ -64,7 +64,7 @@ public class WorkIt_Knowledge_Q7 extends AppCompatActivity {
         });
 
     }
-    public void createNewContactDialog(){
+    /*public void createNewContactDialog(){
         dialogbuilder = new AlertDialog.Builder(this);
         final View contactPopupView = getLayoutInflater().inflate(R.layout.pop_up,null);
         close_btn = contactPopupView.findViewById(R.id.close_btn);
@@ -80,8 +80,11 @@ public class WorkIt_Knowledge_Q7 extends AppCompatActivity {
        });
 
 
+
+
     }
 
+*/
 
 
 
