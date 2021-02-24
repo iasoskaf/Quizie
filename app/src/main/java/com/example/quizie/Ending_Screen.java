@@ -14,6 +14,7 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -28,7 +29,7 @@ public class Ending_Screen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
        //creating chanel
-        NotificationChannel channel = new NotificationChannel("Notification", "Notification",NotificationManager.IMPORTANCE_DEFAULT);
+        NotificationChannel channel = new NotificationChannel("Notification", "Notification",NotificationManager.IMPORTANCE_HIGH);
         NotificationManager manager = getSystemService(NotificationManager.class);
         manager.createNotificationChannel(channel);
 
@@ -49,10 +50,12 @@ public class Ending_Screen extends AppCompatActivity {
 
 
              NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(),"Notification");
-             builder.setContentTitle("Notification");
-             builder.setContentText("Play another quiz!!");
-             builder.setSmallIcon(R.drawable.ic_message);
+             builder.setContentTitle("You Finished Your First Quiz!!");
+                 builder.setContentText("Wanna try another Work It Quiz? Tap here");
+             builder.setSmallIcon(R.drawable.ic_stat_name);
              builder.setContentIntent(pendingIntent);
+             builder.setPriority(NotificationCompat.PRIORITY_HIGH);
+
              builder.setAutoCancel(true);
 
              NotificationManagerCompat managerCompat = NotificationManagerCompat.from(Ending_Screen.this);
@@ -63,6 +66,7 @@ public class Ending_Screen extends AppCompatActivity {
 
          }
      });
+
 
     }
     public void openActivity_Movies(){

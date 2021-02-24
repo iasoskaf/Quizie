@@ -19,6 +19,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.Set;
+
 public class LoginActivity extends AppCompatActivity {
     EditText email,password;
     TextView signupbtn;
@@ -39,7 +41,6 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String Email = email.getText().toString().trim();
                 String Password = password.getText().toString().trim();
-
                 if(TextUtils.isEmpty(Email)){
                     email.setError("Email is required");
                     return;
@@ -60,6 +61,7 @@ public class LoginActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(LoginActivity.this, "Logged in Successfully", Toast.LENGTH_SHORT).show();
+
                             startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         }else{
                             Toast.makeText(LoginActivity.this, "Error!" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -75,5 +77,8 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
             }
         });
+
+
+
     }
 }

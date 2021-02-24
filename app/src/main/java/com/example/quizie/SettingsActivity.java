@@ -16,14 +16,15 @@ import android.widget.Toast;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import static android.view.View.INVISIBLE;
+
 public class SettingsActivity extends AppCompatActivity {
     public Switch mute_all;
-    public Button log_out ;
+    public  Button log_out ;
     FirebaseAuth fAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_settings);
         log_out = findViewById(R.id.log_out);
         fAuth=FirebaseAuth.getInstance();
@@ -49,6 +50,8 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             }
         });
+
+
 
     }
     private void mute() {

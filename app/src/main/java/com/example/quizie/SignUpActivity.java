@@ -100,7 +100,6 @@ public class SignUpActivity extends AppCompatActivity implements DatePickerDialo
                          documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                              @Override
                              public void onSuccess(Void aVoid) {
-
                                  Log.d(TAG, "onSuccess: user Profile is created for"+ userID);
                              }
                          });
