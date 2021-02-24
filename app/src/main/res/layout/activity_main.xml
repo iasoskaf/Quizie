@@ -30,7 +30,6 @@
                 android:layout_weight="1"
                 android:background="#00FFFFFF"
                 android:src="@drawable/ic_baseline_settings_24"
-
                 android:tint="#050505" />
 
 
