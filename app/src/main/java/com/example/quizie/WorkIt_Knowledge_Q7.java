@@ -15,8 +15,8 @@ public class WorkIt_Knowledge_Q7 extends AppCompatActivity {
     //public Intent mIntent = getIntent();
     //int intValue = mIntent.getIntExtra("intVariableName", 0);
     private AlertDialog.Builder dialogbuilder;
-    private AlertDialog dialog;
-    private Button close_btn;
+   // private AlertDialog dialog;
+    //private Button close_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
