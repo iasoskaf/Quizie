@@ -14,9 +14,6 @@ public class WorkIt_Knowledge_Q7 extends AppCompatActivity {
     public Button a,b,c,complete;
     //public Intent mIntent = getIntent();
     //int intValue = mIntent.getIntExtra("intVariableName", 0);
-    private AlertDialog.Builder dialogbuilder;
-   // private AlertDialog dialog;
-    //private Button close_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,34 +55,11 @@ public class WorkIt_Knowledge_Q7 extends AppCompatActivity {
         complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //createNewContactDialog();
                 openActivity_Ending_Screen();
             }
         });
 
     }
-    /*public void createNewContactDialog(){
-        dialogbuilder = new AlertDialog.Builder(this);
-        final View contactPopupView = getLayoutInflater().inflate(R.layout.pop_up,null);
-        close_btn = contactPopupView.findViewById(R.id.close_btn);
-        dialogbuilder.setView(contactPopupView);
-        dialog= dialogbuilder.create();
-        dialog.show();
-
-       close_btn.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               dialog.dismiss();
-           }
-       });
-
-
-
-
-    }
-
-*/
-
 
 
     public void openActivity_Ending_Screen(){
