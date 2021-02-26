@@ -30,7 +30,7 @@ public class Ending_Screen extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        //Achievement Alert
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
@@ -39,10 +39,14 @@ public class Ending_Screen extends AppCompatActivity {
             }
 
         });
+        builder.setNegativeButton("Achievements", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                openActivity_achievements();
+            }
+        });
         builder.setMessage(R.string.dialog)
                 .setTitle(R.string.dialog_title);
-
-
         AlertDialog dialog = builder.create();
         dialog.show();
         //creating chanel
@@ -86,6 +90,11 @@ public class Ending_Screen extends AppCompatActivity {
      });
 
 
+    }
+
+    private void openActivity_achievements() {
+        Intent intent= new Intent(this, AchievementAcvitiy.class);
+        startActivity(intent);
     }
     public void openActivity_Movies(){
         Intent intent= new Intent(this, MoviesActivity.class);

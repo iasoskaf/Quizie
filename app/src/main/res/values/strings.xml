@@ -18,4 +18,6 @@
     <string name="dialog">Achievement Unlocked! \nYou finished your first Quiz</string>
     <string name="dialog_title">Congratulations!!</string>
     <string name="ok">Great</string>
+    <string name="achievements">Achievements</string>
+    <string name="completed_your_first_quiz">Completed Your First Quiz</string>
 </resources>

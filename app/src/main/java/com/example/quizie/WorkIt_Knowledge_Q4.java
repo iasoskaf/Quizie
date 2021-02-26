@@ -1,7 +1,9 @@
 package com.example.quizie;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -16,6 +18,17 @@ public class WorkIt_Knowledge_Q4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+
+            }
+
+        });
+        builder.setMessage("Did you Know Lisa Koshy is a Famous Youtuber??")
+                .setTitle("Fun Fact!");
+        AlertDialog dialog = builder.create();
         setContentView(R.layout.activity_work_it__knowledge__q4);
         a = findViewById(R.id.a);
         b = findViewById(R.id.b);
@@ -37,6 +50,7 @@ public class WorkIt_Knowledge_Q4 extends AppCompatActivity {
             public void onClick(View v) {
 
                 b.setTextColor(Color.GREEN);
+                dialog.show();
                 Toast.makeText(getApplicationContext(),"Correct", Toast.LENGTH_SHORT).show();
                 nextQuiz.setEnabled(true);
                 b.setEnabled(false);

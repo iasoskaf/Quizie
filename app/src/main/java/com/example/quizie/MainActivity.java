@@ -3,11 +3,13 @@ package com.example.quizie;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -15,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MainActivity extends AppCompatActivity {
     public Button login_button;
     public static Button main_signup_button;
-    public ImageButton settings_button;
+    public ImageButton settings_button,achievement_btn;
     public Button play_button;
     @Override
 
@@ -23,7 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        achievement_btn = findViewById(R.id.achievement_btn);
+        achievement_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity_achievements();
+            }
+        });
          login_button = (Button) findViewById(R.id.login_button);
          login_button.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -59,7 +67,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-     public void openActivity_login(){
+
+    private void openActivity_achievements() {
+        Intent intent= new Intent(this, AchievementAcvitiy.class);
+        startActivity(intent);
+    }
+
+    public void openActivity_login(){
         Intent intent= new Intent(this, LoginActivity.class);
                 startActivity(intent);
                 //opens Login Activity
@@ -78,4 +92,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
 }
